@@ -14,3 +14,5 @@ EXPOSE 8000
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 WORKDIR /
 COPY . ..
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
